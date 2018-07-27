@@ -4,4 +4,3 @@ Feature: Let's log into Dovico
     Given I am on the the Dovico login page
     When I enter the username "" with the password ""
     Then I am taken to the Dovico homepage
-    
