@@ -1,9 +1,9 @@
 
-Given(/^I am on the the Dovico login page$/) do
-  pending
+When(/^I enter my credentials$/) do
+  on(LoginPage).login_with('Northwoods','jhooker@teamnorthwoods.com','Lex01lab')
 end
 
-When(/^I enter the username "([^"]*)" with the password "([^"]*)"$/) do |arg1, arg2|
+Given(/^I am on the the Dovico login page$/) do
   pending
 end
 
