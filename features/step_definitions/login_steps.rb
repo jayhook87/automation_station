@@ -1,6 +1,8 @@
 
 When(/^I enter my credentials$/) do
-  on(LoginPage).login_with('Northwoods','jhooker@teamnorthwoods.com','Lex01lab')
+  browser = Watir::Browser.new :chrome
+  page = LoginPage.new(browser)
+  on(page).login_with('Northwoods','jhooker@teamnorthwoods.com','Lex01lab')
 end
 
 Given(/^I am on the the Dovico login page$/) do
